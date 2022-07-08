@@ -54,3 +54,19 @@ create database escola_ingles;
 ```
 npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
 ```
+### Criando migração
+```
+npx sequelize-cli db:migrate
+```
+### Entrando na tabela
+```
+use escola_ingles;
+```
+### Mostrando tabelas
+```
+show tables;
+```
+### Mostrando tabela Pessoas
+```
+describe Pessoas;
+```
