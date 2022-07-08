@@ -14,6 +14,14 @@ $ npm install body-parser
 ```
 $ npm install --save-dev nodemon
 ```
+### Instalando banco
+```
+$ npm install mysql2
+```
+### Instalando orm e cli
+```
+$ npm install sequelize sequelize-cli path
+```
 ### Rodar programa
 ```
 $ npm run start
