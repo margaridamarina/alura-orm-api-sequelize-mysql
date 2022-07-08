@@ -10,7 +10,11 @@ $ npm install express
 ```
 $ npm install body-parser
 ```
+### Instalando biblioteca que atualiza automaticamente o servidor
+```
+$ npm install --save-dev nodemon
+```
 ### Rodar programa
 ```
-$ node api/index.js
+$ npm run start
 ```
