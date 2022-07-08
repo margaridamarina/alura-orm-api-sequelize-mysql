@@ -22,6 +22,10 @@ $ npm install mysql2
 ```
 $ npm install sequelize sequelize-cli path
 ```
+### Estruturando arquivos iniciais
+```
+$ npx sequelize-cli init
+```
 ### Rodar programa
 ```
 $ npm run start
