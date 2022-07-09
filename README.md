@@ -70,3 +70,15 @@ show tables;
 ```
 describe Pessoas;
 ```
+### Criando linha na tabela Pessoas
+```
+insert into Pessoas (nome, ativo, email, role, createdAt, updatedAt) values ("Carla Gomes", 1, "carla@carla.com", "estudante", NOW(), NOW());
+```
+### Mostrando tudo na tabela Pessoas
+```
+select * from Pessoas;
+```
+### Criando seeder 
+```
+npx sequelize-cli seed:generate --name demo-pessoa
+```
