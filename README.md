@@ -74,7 +74,7 @@ insert into Pessoas (nome, ativo, email, role, createdAt, updatedAt) values ("Ca
 ```
 select * from Pessoas;
 ```
-### Criando seeder 
+### Criando seeder pessoa
 ```
 npx sequelize-cli seed:generate --name demo-pessoa
 ```
@@ -93,4 +93,24 @@ npx sequelize-cli model:create --name Turmas --attributes data_inicio:dateonly
 ### Criando tabela Matrículas
 ```
 npx sequelize-cli model:create --name Matriculas --attributes status:string
+```
+### Fazendo migrações após associação entre tabelas
+```
+npx sequelize-cli db:migrate
+```
+### Criando seeder nivel
+```
+npx sequelize-cli seed:generate --name demo-nivel
+```
+### Criando seeder turma
+```
+npx sequelize-cli seed:generate --name demo-turma
+```
+### Criando seeder matricula
+```
+npx sequelize-cli seed:generate --name demo-matricula
+```
+### Enviando dados para o banco
+```
+npx sequelize-cli db:seed:all
 ```
