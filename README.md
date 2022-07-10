@@ -30,13 +30,9 @@ $ npx sequelize-cli init
 ```
 $ npm run start
 ```
-### Criando volume 
-```
-docker volume create mysqldata
-```
 ### Rodando imagem
 ```
-docker run -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql:latest
+docker-compose up
 ```
 ### Acessando imagem
 ```
@@ -81,4 +77,8 @@ select * from Pessoas;
 ### Criando seeder 
 ```
 npx sequelize-cli seed:generate --name demo-pessoa
+```
+### Enviando dados para o banco
+```
+npx sequelize-cli db:seed:all
 ```
