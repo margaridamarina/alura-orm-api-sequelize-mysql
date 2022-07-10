@@ -46,7 +46,7 @@ show databases;
 ```
 create database escola_ingles;
 ```
-### Criando tabela
+### Criando tabela Pessoas
 ```
 npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
 ```
@@ -81,4 +81,16 @@ npx sequelize-cli seed:generate --name demo-pessoa
 ### Enviando dados para o banco
 ```
 npx sequelize-cli db:seed:all
+```
+### Criando tabela Níveis
+```
+npx sequelize-cli model:create --name Niveis --attributes descr_nivel:string
+```
+### Criando tabela Turmas
+```
+npx sequelize-cli model:create --name Turmas --attributes data_inicio:dateonly
+```
+### Criando tabela Matrículas
+```
+npx sequelize-cli model:create --name Matriculas --attributes status:string
 ```
