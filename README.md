@@ -32,11 +32,11 @@ $ npm run start
 ```
 ### Rodando imagem
 ```
-docker-compose up
+$ docker-compose up
 ```
 ### Acessando imagem
 ```
-mysql -h 127.0.0.1 -P 3306 -u root
+$ mysql -h 127.0.0.1 -P 3306 -u root
 ```
 ### Mostrando bancos
 ```
@@ -48,11 +48,11 @@ create database escola_ingles;
 ```
 ### Criando tabela Pessoas
 ```
-npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
+$ npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
 ```
 ### Criando migração
 ```
-npx sequelize-cli db:migrate
+$ npx sequelize-cli db:migrate
 ```
 ### Entrando na tabela
 ```
@@ -76,41 +76,41 @@ select * from Pessoas;
 ```
 ### Criando seeder pessoa
 ```
-npx sequelize-cli seed:generate --name demo-pessoa
+$ npx sequelize-cli seed:generate --name demo-pessoa
 ```
 ### Enviando dados para o banco
 ```
-npx sequelize-cli db:seed:all
+$ npx sequelize-cli db:seed:all
 ```
 ### Criando tabela Níveis
 ```
-npx sequelize-cli model:create --name Niveis --attributes descr_nivel:string
+$ npx sequelize-cli model:create --name Niveis --attributes descr_nivel:string
 ```
 ### Criando tabela Turmas
 ```
-npx sequelize-cli model:create --name Turmas --attributes data_inicio:dateonly
+$ npx sequelize-cli model:create --name Turmas --attributes data_inicio:dateonly
 ```
 ### Criando tabela Matrículas
 ```
-npx sequelize-cli model:create --name Matriculas --attributes status:string
+$ npx sequelize-cli model:create --name Matriculas --attributes status:string
 ```
 ### Fazendo migrações após associação entre tabelas
 ```
-npx sequelize-cli db:migrate
+$ npx sequelize-cli db:migrate
 ```
 ### Criando seeder nivel
 ```
-npx sequelize-cli seed:generate --name demo-nivel
+$ npx sequelize-cli seed:generate --name demo-nivel
 ```
 ### Criando seeder turma
 ```
-npx sequelize-cli seed:generate --name demo-turma
+$ npx sequelize-cli seed:generate --name demo-turma
 ```
 ### Criando seeder matricula
 ```
-npx sequelize-cli seed:generate --name demo-matricula
+$ npx sequelize-cli seed:generate --name demo-matricula
 ```
 ### Enviando dados para o banco
 ```
-npx sequelize-cli db:seed:all
+$ npx sequelize-cli db:seed:all
 ```
